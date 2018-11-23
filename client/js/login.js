@@ -5,6 +5,7 @@ const password = document.getElementById('password').value;
 const data = {username, password}
 
 const loginBtn = document.querySelector('.button-1');
+const fetch = window.fetch;
 
 fetch(url, {
     method: "POST",
