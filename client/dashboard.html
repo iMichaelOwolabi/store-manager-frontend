@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Store Manager: Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="container">
+				<div id="logo">
+					<h1><a href="#">Store Manager</a></h1>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="dashboard.html">Dashboard</a></li>
+						<li><a href="products.html">Products</a></li>
+						<li><a href="sales.html">Sales</a></li>
+						<li><a href="attendants.html">Attendants</a></li>
+						<li><a href="index.html">Logout</a></li>
+						<a href="shopping-cart.html"><span class="shopping-cart"><i class="fas fa-shopping-cart"><i class="star">*</i></i></span></a>
+					</ul>
+					<input type="text" placeholder="Search...">
+				</nav>
+			</div>
+		</header>
+
+		<div id="myModal" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+				New profile picture
+				<span class="close">&times;</span>
+				<input type="file" class="upload">
+				<div class="uploadDiv"><button class="uploadBtn">Upload</button></div>
+			</div>						
+		</div>
+
+		<section id="attendant">
+			<div id="dashboard">
+				<div class="container">
+					<div class = "Profile">
+						<img src="./img/user.png" class="user">			
+						<div class="picture"><button class="modal-btn">Change Picture</button></div>
+						<p>Account Overview</p>
+					</div>
+					<div class="boxes">
+						<div class="box">
+							<h3>Total Sales:</h3>
+							<h1><span class="figures">15</span></h1>
+						</div>
+						<div class="box">
+							<h3>Number of Products Sold:</h3>
+							<h1><span class="figures">4</span></h1>
+						</div>
+						<div class="box">
+							<h3>Total Sales Worth:</h3>
+							<h1><span class="figures">#15,000</span></h1>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+
+		<section id="admin">
+			<div id="dashboard">
+				<div class="container">
+					<p>Store Activity</p>
+					<div class="boxes">
+						<div class="box">
+							<h3>Total Store Sales:</h3>
+							<h1><span class="figures">78</span></h1>
+						</div>
+						<div class="box">
+							<h3>Best Performing Product:</h3>
+							<h1><span class="figures">Vintage Bow Tie</span></h1>
+						</div>
+						<div class="box">
+							<h3>Most Active Store Attendant:</h3>
+							<h1><span class="figures">James</span></h1>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<div class="push"></div>
+		<div class="push"></div>
+		<div class="push"></div>
+	</div>
+
+	<footer>
+			<p>Store Manager, copyright &copy; 2018</p>
+	</footer>
+	<script src="./js/main.js"></script>
+</body>
+</html>
