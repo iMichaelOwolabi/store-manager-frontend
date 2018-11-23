@@ -16,7 +16,7 @@ fetch(url, {
     },
     body: JSON.stringify(data),
   })
-  .then(res => res.json())
+  .then(response => response.json())
   .then(response => console.log('Success:', JSON.stringify(response)))
   .catch(error => console.error('Error:', error));
 
