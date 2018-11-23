@@ -20,6 +20,12 @@ ul {
 	margin: 0;
 	padding: 0;
 }
+.logout {
+	cursor: pointer;
+}
+.logout:hover{
+	color: #B8860B;
+}
 .container {
 	width: 80%;
 	margin: auto;
@@ -67,6 +73,10 @@ button:hover {
 .attendant {
 	visibility: visible;
 	display: block;
+}
+.error {
+	color: rgb(228, 9, 9);
+	padding-bottom: 7px;
 }
 .admin {
 	visibility: visible;
