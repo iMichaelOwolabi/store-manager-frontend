@@ -1,8 +1,8 @@
 const loginBtn = document.querySelector('.button-1');
 
 const login = () => {
-// const url = 'https://yourstoremanager.herokuapp.com/api/v1/auth/login/';
-const url = 'http://localhost:3000/api/v1/auth/login/';
+const url = 'https://yourstoremanager.herokuapp.com/api/v1/auth/login/';
+//const url = 'http://localhost:3000/api/v1/auth/login/';
 const username = document.getElementById('username').value.trim();
 const password = document.getElementById('password').value.trim();
 
