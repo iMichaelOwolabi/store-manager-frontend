@@ -1,0 +1,23 @@
+{
+  "name": "store-manager-frontend",
+  "version": "1.0.0",
+  "description": "The frontend for the store manager app",
+  "main": ".eslintrc.js",
+  "dependencies": {
+    "eslint": "^5.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iMichaelOwolabi/store-manager-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iMichaelOwolabi/store-manager-frontend/issues"
+  },
+  "homepage": "https://github.com/iMichaelOwolabi/store-manager-frontend#readme"
+}

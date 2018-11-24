@@ -6,7 +6,7 @@ const delModal = document.getElementsByClassName('modal')[1];
 // Get the button that opens the modal
 const pictureBtnUser = document.querySelectorAll('.modal-btn')[0];
 const productModifyBtn = document.querySelectorAll('.modal-btn')[0];
-const deleteBtn = document.querySelectorAll('.modal-btn')[1];
+const deleteBtn = document.querySelectorAll('.modal-btn')[0];
 
 
 function show() {
