@@ -78,6 +78,10 @@ button:hover {
 	color: rgb(228, 9, 9);
 	padding-bottom: 7px;
 }
+#big-error {
+	margin-top: 20px;
+	font-size: 20px;
+}
 .admin {
 	visibility: visible;
 	display: block;
