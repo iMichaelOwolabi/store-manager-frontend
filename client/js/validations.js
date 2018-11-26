@@ -49,6 +49,13 @@ class Validations {
     }
     return true;
   }
+
+  static passwordCompare(pass, copmarePass) {
+    if (pass !== copmarePass) {
+      return false;
+    }
+    return true;
+  }
 }
 
 export default Validations;

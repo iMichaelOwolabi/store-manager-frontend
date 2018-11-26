@@ -82,6 +82,10 @@ button:hover {
 	margin-top: 20px;
 	font-size: 20px;
 }
+.success {
+	color: #B8860B;
+	font-size: 18px;
+}
 .admin {
 	visibility: visible;
 	display: block;
@@ -307,7 +311,7 @@ header #logo h1 {
 	text-align: center;
 }
 #account input {
-	min-width: 30%;
+	width: 60%;
 }
 .create-acc-btn { 
 	padding: 10px;
