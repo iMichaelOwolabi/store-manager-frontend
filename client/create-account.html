@@ -18,27 +18,31 @@
 						<li><a href="dashboard.html">Dashboard</a></li>
 						<li><a href="products.html">Products</a></li>
 						<li><a href="sales.html">Sales</a></li>
-						<li><a href="attendants.html">Attendants</a></li>
-						<li><a href="index.html">Logout</a></li>
+						<li class="admin"><a href="attendants.html">Attendants</a></li>
+						<li class="logout">Logout</li>
 					</ul>
 					<input type="text" placeholder="Search...">
 				</nav>
 			</div>
 		</header>
-
+		
 		<section id="account">
 			<div class="container">
-				<div class="create-box">
+				<div class="push"></div>
+				<div class="success"></div>
+				<div class="loginBox">
 					<h2>New Attendant Account</h2>
-						<form action="#">
-							<input type="text" name="username" id="username" placeholder="Username" required>
-							<input type="password" name="password" id="password" placeholder="Password" required>
-							<input type="password" name="re-password" id="re-password" placeholder="Confirm Password" required>
-							<a href="attendants.html"><button class="create-acc-btn" type="submit">Create Account</button></a>
-						</form>
+						<input type="text" name="username" id="username" placeholder="Username" required>
+						<input type="password" name="password" id="password" placeholder="Password" required>
+						<input type="password" name="re-password" id="re-password" placeholder="Confirm Password" required>
+						<div class="error"></div>
+						<a href="#"><button class="button-1" type="submit" id="create-account">Create Account</button></a>
 				</div>
 			</div>
 		</section>
+		<div class="container">
+			<div class = "error" id="big-error"></div>
+		</div>
 		<div class="push"></div>
 		<div class="push"></div>
 		<div class="push"></div>
@@ -46,5 +50,7 @@
 	<footer>
 		<p>Store Manager, copyright &copy; 2018</p>
 	</footer>
+	<script src="./js/logout.js"></script>
+	<script src="./js/newuser.js"></script>
 </body>
 </html>
