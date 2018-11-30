@@ -9,8 +9,8 @@ const token = localStorage.getItem('token');
 const createBtn = document.getElementById('create-account');
 
 const createUser = () => {
-  // const url = 'https://yourstoremanager.herokuapp.com/api/v1/auth/signup/';
-  const url = 'http://localhost:3000/api/v1/auth/signup/';
+  // const signupUrl = 'https://yourstoremanager.herokuapp.com/api/v1/auth/signup/';
+  const signupUrl = 'http://localhost:3000/api/v1/auth/signup/';
 
   const username = document.getElementById('username').value.trim();
   const password = document.getElementById('password').value.trim();
@@ -25,7 +25,7 @@ const createUser = () => {
 
   const data = { username, password };
 
-  return fetch(url, {
+  return fetch(signupUrl, {
     method: 'post',
     mode: 'cors',
     headers: {
@@ -40,17 +40,14 @@ const createUser = () => {
         document.getElementsByClassName('error')[0].style.display = 'none';
         document.getElementsByClassName('success')[0].innerHTML = response.message;
         document.getElementsByClassName('success')[0].style.display = 'block';
-        console.log(response.message);
       } else if (userRole === 'user') {
         document.getElementsByClassName('admin')[0].style.display = 'none';
         document.getElementById('account').style.display = 'none';
         document.getElementsByClassName('error')[0].innerHTML = response.message;
-        console.log(response.message);
       } else {
         document.getElementsByClassName('success')[0].style.display = 'none';
         document.getElementsByClassName('error')[0].innerHTML = response.message;
         document.getElementsByClassName('error')[0].style.display = 'block';
-        console.log(response);
       }
     })
     .catch((error) => {
