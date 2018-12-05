@@ -5,6 +5,21 @@ if (!localStorage.getItem('token')) {
 const userRole = localStorage.getItem('role');
 const token = localStorage.getItem('token');
 
+const body = document.getElementsByTagName('body');
+
+
+const checkRole = () => {
+  if (userRole === 'user') {
+    document.getElementsByClassName('admin')[0].style.display = 'none';
+    document.getElementsById('create-product')[0].style.display = 'none';
+    document.getElementsByClassName('success')[0].style.display = 'none';
+    // document.getElementsById('big-error').innerHTML = response.message;
+    document.getElementsById('big-error').style.display = 'block';
+  }
+};
+checkRole();
+body.addEventListener('load', checkRole);
+
 const cloudinaryUrl = 'https://api.cloudinary.com/v1_1/imichaelowolabi/image/upload';
 const cloudinaryPreset = 'd9rczfim';
 
@@ -64,15 +79,16 @@ const createProduct = () => {
   })
     .then(response => response.json())
     .then((response) => {
-      if (response.success === true) {
+      if (response.success === true && userRole === 'admin' || userRole === 'superadmin') {
         document.getElementsByClassName('error')[0].style.display = 'none';
         document.getElementsByClassName('success')[0].innerHTML = response.message;
         document.getElementsByClassName('success')[0].style.display = 'block';
       } else if (userRole === 'user') {
         document.getElementsByClassName('admin')[0].style.display = 'none';
+        document.getElementsById('create-product')[0].style.display = 'none';
         document.getElementsByClassName('success')[0].style.display = 'none';
-        document.getElementsByClassName('error')[0].innerHTML = response.message;
-        document.getElementsByClassName('error')[0].style.display = 'block';
+        document.getElementsById('big-error').innerHTML = response.message;
+        document.getElementsById('big-error').style.display = 'block';
       } else {
         document.getElementsByClassName('success')[0].style.display = 'none';
         document.getElementsByClassName('error')[0].innerHTML = response.message;
